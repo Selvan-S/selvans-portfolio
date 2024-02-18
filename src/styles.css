@@ -1,0 +1,630 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* ----------- Colors ------------ */
+:root {
+  --hero-background: rgb(15, 15, 15);
+  --hover-color: rgba(15, 15, 15, 0.8);
+  --section-background: rgb(235, 229, 229);
+  --hightlight: rgb(0, 255, 255);
+  --text-color: rgb(240, 248, 255);
+  --second-color: rgb(17, 106, 123);
+  --svg-fill: var(--second-color);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--hero-background);
+}
+/* ------- Scroll to top Hero Section ---------- */
+.up-arrow {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  margin: 0 20px 20px 0;
+}
+
+span a svg {
+  position: absolute;
+  margin: 7.5px;
+  height: 30px;
+  width: 30px;
+  opacity: 0.3;
+  z-index: 100;
+}
+.up-arrow::after {
+  content: "";
+  display: block;
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  background-color: var(--hightlight);
+  opacity: 0.3;
+  z-index: 1;
+}
+span a svg:hover {
+  opacity: 1;
+}
+
+/* ------------- Navigation Bar------------------ */
+.nav {
+  display: flex;
+  padding: 13px;
+  max-width: 1024px;
+  margin: auto;
+}
+.logo {
+  flex-basis: 20%;
+  text-align: center;
+}
+nav {
+  font-size: 20px;
+  flex-basis: 80%;
+  background-color: var(--hero-background);
+  margin: auto;
+}
+
+.logo::before {
+  content: "Selvan";
+  font-family: inherit;
+  font-weight: 800;
+  font-size: 24px;
+}
+.hero ul {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  list-style: none;
+  text-decoration: none;
+}
+
+.hero ul li a {
+  position: relative;
+  color: var(--hightlight);
+}
+.hero ul li a:hover {
+  color: var(--text-color);
+}
+.hero ul li a::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 3px;
+  background: var(--hightlight);
+  transition: transform 0.3s ease-in-out;
+  transform: scale(0);
+}
+
+.hero ul li a:hover::after {
+  transform: scale(1);
+}
+.nav__toggle {
+  display: none;
+}
+
+/* -------------- Hero Section ----------------- */
+.hero {
+  height: 100vh;
+  background-color: hsl(0, 0%, 6%);
+  color: var(--text-color);
+  list-style: none;
+}
+
+.hero-area {
+  display: flex;
+  height: 100%;
+  width: 80%;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1024px;
+}
+
+.hero-text p {
+  font-size: 20px;
+  font-weight: 300;
+}
+.hero-text h1 {
+  font-size: 80px;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.linkedin {
+  color: var(--hightlight);
+}
+.button {
+  width: 100px;
+  height: 30px;
+  margin-top: 14px;
+  padding-top: 3px;
+  font-weight: 300;
+  border-radius: 40px;
+  background-color: var(--hightlight);
+  color: var(--hero-background);
+  text-align: center;
+}
+
+a {
+  font-family: inherit;
+  text-decoration: none;
+  color: inherit;
+}
+
+.button:hover {
+  background-color: var(--second-color);
+  color: var(--text-color);
+}
+
+.button:active {
+  background-color: var(--text-color);
+}
+
+/* ------------ Sections ------------------ */
+section {
+  background-color: var(--section-background);
+}
+
+/*---------- About Me --------------*/
+.aboutme-section {
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
+  margin: auto;
+  padding: 20px 0px;
+  max-width: 1024px;
+}
+.info {
+  flex-basis: 77%;
+}
+.headshot-container {
+  justify-content: center;
+  flex-basis: 23%;
+}
+.headshot-container img {
+  border-radius: 50%;
+  max-width: 100%;
+  height: auto;
+}
+
+/* ------------- Projects ------------------ */
+.project-section {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+}
+.project-section h2 {
+  margin: 0 0 20px 0;
+  text-align: center;
+}
+.project-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.project-card {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 415px;
+  box-shadow: 5px 5px 20px gray;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  transition: all 0.3s ease-in-out;
+}
+
+.project-card:hover,
+.project-card:focus {
+  overflow: hidden;
+  -ms-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.project-info {
+  text-align: center;
+  color: var(--hero-background);
+  padding: 8px;
+  margin: auto;
+}
+.subtext {
+  font-size: 14px;
+  font-weight: 400;
+  margin-block: 14px;
+}
+.subtext a {
+  color: var(--second-color);
+  position: relative;
+}
+.subtext a:focus {
+  color: var(--hero-background);
+}
+
+.subtext a::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  height: 3px;
+  width: 100%;
+  background: var(--hero-background);
+  transition: transform 0.3s ease-in-out;
+  transform: scale(0);
+}
+.subtext a:hover::after {
+  transform: scale(1);
+}
+
+hr {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.project-svg {
+  display: none;
+  margin: auto;
+  position: absolute;
+  cursor: pointer;
+  text-decoration: none;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 90px;
+  height: 90px;
+  stroke: none;
+  fill: var(--svg-fill);
+}
+.img-container {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  height: 50%;
+  width: 63%;
+}
+.project-img {
+  object-fit: fill;
+  margin: 10px auto;
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+.project-card:hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(
+    120deg,
+    rgba(253, 251, 251, 1) 0%,
+    rgba(235, 237, 238, 0.4) 100%
+  );
+  filter: blur(5.5px);
+  -webkit-filter: blur(5.5px);
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+.project-card:hover .project-svg,
+.project-card:focus .project-svg {
+  display: block;
+}
+
+/* -------------- Project 1-------------- */
+
+.project-card .project-one-github a svg {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  stroke: none;
+  fill: var(--svg-fill);
+}
+
+.project-card:hover .project-one-github a svg {
+  animation: leftToRight 0.3s forwards ease-out alternate;
+}
+
+@keyframes leftToRight {
+  from {
+    right: 165px;
+  }
+  to {
+    right: 100px;
+  }
+}
+
+.project-card .project-one-live a svg {
+  top: 0px;
+  bottom: 0;
+  right: 0;
+  width: 100px;
+  height: 100px;
+  stroke: var(--svg-fill);
+  fill: none;
+}
+
+.project-card:hover .project-one-live a svg {
+  animation: rightToLeft 0.3s forwards ease-out alternate;
+}
+
+@keyframes rightToLeft {
+  from {
+    left: 165px;
+  }
+  to {
+    left: 110px;
+  }
+}
+
+/* ------------- Footer --------------- */
+footer {
+  width: 100%;
+  margin: 40px 0;
+  text-align: center;
+  background-color: var(--hero-background);
+  color: var(--text-color);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 20px auto;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: var(--hightlight);
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 255, 255, 0.25);
+}
+.form-control {
+  font-family: inherit;
+  font-size: 14px;
+  width: 100%;
+  margin: 5px auto;
+  padding: 6px 10px;
+}
+.contact-form input {
+  border-radius: 10px;
+}
+.contact-form textarea {
+  border-radius: 20px;
+}
+
+.contact-form button {
+  font-weight: 700;
+  border-radius: 25px;
+  border: 2px solid var(--hero-background);
+  background-color: var(--hightlight);
+}
+.contact-form button:hover {
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 255, 255, 0.25);
+}
+
+.footer-social-links {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+footer .x {
+  padding-top: 6px;
+}
+
+/* ----------------- Mobile ---------------- */
+
+@media screen and (max-width: 810px) {
+  /* Hero Section */
+  nav {
+    font-size: 18px;
+  }
+  .hero-text h1 {
+    font-size: 72px;
+  }
+  .hero-text p {
+    font-size: 16px;
+  }
+  .x svg,
+  .linkedin svg,
+  .github svg {
+    width: 40px;
+    height: 40px;
+  }
+  .button {
+    font-size: 14px;
+    width: 96px;
+    height: 26px;
+  }
+
+  /* Nav bar hamburger toggle menu*/
+  #nav-menu {
+    position: fixed;
+    top: 61px;
+    right: -500px;
+    width: 60%;
+    height: 100%;
+    padding: 2rem;
+    font-size: 24px;
+    font-weight: 600;
+    background-color: var(--second-color);
+    border-radius: 5px;
+    z-index: 100;
+    transition: 0.3s ease-out;
+    display: block;
+  }
+  .nav__list {
+    flex-direction: column;
+  }
+  .nav {
+    position: fixed;
+    background-color: var(--hero-background);
+    width: 100%;
+    z-index: 100;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav__item {
+    margin-bottom: 50px;
+  }
+  .hero ul li a {
+    color: var(--text-color);
+  }
+  .hero ul li a:hover {
+    color: var(--text-color);
+  }
+  .hero ul li a::after {
+    top: 40px;
+    height: 3px;
+    background-color: #fff;
+  }
+  .nav__toggle {
+    display: block;
+    color: var(--hightlight);
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-right: 20px;
+  }
+  #nav-menu.show {
+    right: 0;
+  }
+  .nav__link {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .nav__link.active {
+    background-color: var(--hero-background);
+    color: var(--text-color);
+    padding-right: 8px;
+    border-radius: 5px;
+    transition: 0.3s ease-out;
+  }
+  .nav__link:hover {
+    background-color: var(--hero-background);
+    color: var(--text-color);
+    padding-right: 8px;
+    border-radius: 5px;
+    transition: 0.3s ease-out;
+  }
+
+  #home.active {
+    background-color: var(--hero-background);
+    color: var(--text-color);
+    padding-right: 8px;
+    border-radius: 5px;
+  }
+
+  .hero ul li a:hover::after {
+    transform: scale(0);
+  }
+
+  /* About Me */
+  .info {
+    font-size: 14px;
+    text-align: center;
+  }
+  .headshot-container {
+    width: 62%;
+    margin: auto;
+  }
+  .aboutme-section {
+    flex-direction: column-reverse;
+    width: 56%;
+  }
+
+  /* Project */
+  .project-card:hover::before {
+    background-image: none;
+    filter: none;
+    -webkit-filter: none;
+    z-index: -1;
+  }
+
+  .project-card:hover .project-svg,
+  .project-card:focus .project-svg {
+    display: none;
+  }
+
+  /* Footer */
+  .contact-form {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 600px) {
+  /* Hero Section */
+  .hero-text h1 {
+    font-size: 60px;
+  }
+  .hero-text p {
+    font-size: 14px;
+  }
+  .x svg,
+  .linkedin svg,
+  .github svg {
+    width: 30px;
+    height: 30px;
+  }
+  .hero ul li a::after {
+    height: 2px;
+    top: 35px;
+  }
+  #nav-menu {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  /* Project */
+  .project-card {
+    width: 240px;
+    height: 375px;
+  }
+
+  .project-info h3 {
+    font-size: 1rem;
+  }
+  .subtext {
+    font-size: 12px;
+  }
+
+  .project-img {
+    -webkit-mask-image: url("images/shape-circle-svgrepo-com.svg");
+    -webkit-mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    mask-image: url("images/shape-circle-svgrepo-com.svg");
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    border-radius: 0;
+    margin: 25px 0 0 auto;
+  }
+
+  .project-card .project-svg {
+    width: 78px;
+    height: 74px;
+  }
+  .project-card .project-one-live a svg {
+    width: 78px;
+    height: 78px;
+  }
+}

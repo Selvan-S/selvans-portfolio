@@ -1,0 +1,97 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+    --hero-background: hsl(0, 0%, 6%);
+    --section-background: rgb(235, 229, 229);
+    --hightlight: rgb(0, 255, 255);
+    --text-color: rgb(240, 248, 255);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--hero-background);
+    color: var(--text-color);
+}
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    list-style: none;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    color: var(--hightlight);
+    font-weight: 700;  
+    text-align: center;
+}
+
+.thumbs-up {
+    border: none;
+    background-color: inherit;
+    color: var(--hightlight);
+}
+
+.back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 50px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--hightlight);
+
+}
+h3 {
+    position: relative;
+}
+.back.icon {
+    color: var(--text-color);
+}
+h3 a::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: var(--hightlight);
+    transition: transform 0.2s ease-in-out;
+    transform: scale(0);
+}
+
+h3 a:hover, h3 a:hover::after{
+    color: var(--text-color);
+    transform: scale(1);
+}
+
+.back-icon {
+    border: none;
+    background-color: inherit;
+    color: var(--text-color);
+}
+.back button {
+    color: var(--hightlight);
+}
+.back a{
+   position: relative;
+}
+.back button:hover {
+    cursor: pointer;
+    color: var(--text-color);
+}
+

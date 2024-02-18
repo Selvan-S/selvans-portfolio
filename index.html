@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+      />
+    <title>Selvan | Portfolio</title>
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <span class="scroll-watcher"></span>
+    <span class="up-arrow">
+      <a href="#hero-section">
+        <svg
+          fill="#0f0f0"
+          height="200px"
+          width="200px"
+          version="1.1"
+          id="Layer_1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 0 330 330"
+          xml:space="preserve"
+          stroke="#00ffff"
+        >
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g
+            id="SVGRepo_tracerCarrier"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></g>
+          <g id="SVGRepo_iconCarrier">
+            <path
+              id="XMLID_21_"
+              d="M213.107,41.894l-37.5-37.5c-5.857-5.858-15.355-5.858-21.213,0l-37.5,37.5 c-4.29,4.29-5.573,10.742-3.252,16.347c2.322,5.605,7.792,9.26,13.858,9.26H150V315c0,8.284,6.716,15,15,15c8.284,0,15-6.716,15-15 V67.5h22.5c6.067,0,11.537-3.655,13.858-9.26C218.68,52.635,217.397,46.184,213.107,41.894z"
+            ></path>
+          </g>
+        </svg>
+      </a>
+    </span>
+    <!-- -------Hero Section ----------- -->
+    <section id="hero-section" class="hero">
+      <!-- ----------- Nav Bar ----------- -->
+      <div class="nav">
+        <div class="logo"></div>
+        <nav class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#hero-section" class="nav__link active" id="home">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#aboutme" class="nav__link">About Me</a>
+            </li>
+            <li class="nav__item">
+              <a href="#projects" class="nav__link">Projects</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact-me" class="nav__link">Contact Me</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="fas fa-bars icon-color"></i>
+        </div>
+      </div>
+
+      <!-- ------------------------- Hero ------------------- -->
+      <div class="hero-area">
+        <div class="hero-text">
+          <h1>Selvan</h1>
+          <p>Full Stack Developer</p>
+          <div class="button">
+            <a href="#aboutme">About Me</a>
+          </div>
+        </div>
+        <div class="social-media">
+          <a href="https://twitter.com/codyselvan" target="_blank" class="x">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              x="0px"
+              y="0px"
+              width="50"
+              height="50"
+              viewBox="0,0,256,256"
+            >
+              <g
+                fill="aqua"
+                fill-rule="nonzero"
+                stroke="none"
+                stroke-width="1"
+                stroke-linecap="butt"
+                stroke-linejoin="miter"
+                stroke-miterlimit="10"
+                stroke-dasharray=""
+                stroke-dashoffset="0"
+                font-family="none"
+                font-weight="none"
+                font-size="none"
+                text-anchor="none"
+                style="mix-blend-mode: normal"
+              >
+                <g transform="scale(5.12,5.12)">
+                  <path
+                    d="M6.91992,6l14.2168,20.72656l-14.9082,17.27344h3.17773l13.13867,-15.22266l10.44141,15.22266h10.01367l-14.87695,-21.6875l14.08008,-16.3125h-3.17578l-12.31055,14.26172l-9.7832,-14.26172z"
+                  ></path>
+                </g>
+              </g>
+            </svg>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/selvan23/"
+            target="_blank"
+            class="linkedin"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="aqua"
+              width="50"
+              height="50"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"
+              />
+            </svg>
+          </a>
+          <a href="https://github.com/Selvan-S" target="_blank" class="github">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="aqua"
+              width="50"
+              height="50"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- --------About Me Section--------- -->
+    </section>
+    <section id="aboutme">
+      <div class="aboutme-section">
+        <div class="info">
+          <h2>About Me</h2>
+          <p>Hello, My name is Selvan. I am a Software Developer.</p>
+        </div>
+        <div class="headshot-container">
+          <img
+            class="headshot"
+            src="src/images/headshot.jpg"
+            alt="Cody Headshot"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- -----Project Section----- -->
+    <section id="projects">
+      <div class="project-section">
+        <h2>Projects</h2>
+        <div class="project-container">
+          <!-- Project 6 -->
+          <div class="project-card project-one">
+            <div class="project-one-github">
+              <a
+                href="https://github.com/Selvan-S/nextjs-ecommerce"
+                target="_blank"
+              >
+                <svg
+                  class="project-svg"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="50"
+                  height="50"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                  />
+                </svg>
+              </a>
+            </div>
+            <div class="project-one-live">
+              <a
+                href="https://nextjs-ecommerce-lac-six.vercel.app"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg
+                  class="project-svg"
+                  viewBox="0 0 64 64"
+                  xmlns="http://www.w3.org/2000/svg"
+                  stroke-width="3"
+                  stroke="aqua"
+                  fill="none"
+                >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path
+                      d="M39.93,55.72A24.86,24.86,0,1,1,56.86,32.15a37.24,37.24,0,0,1-.73,6"
+                    ></path>
+                    <path d="M37.86,51.1A47,47,0,0,1,32,56.7"></path>
+                    <path
+                      d="M32,7A34.14,34.14,0,0,1,43.57,30a34.07,34.07,0,0,1,.09,4.85"
+                    ></path>
+                    <path
+                      d="M32,7A34.09,34.09,0,0,0,20.31,32.46c0,16.2,7.28,21,11.66,24.24"
+                    ></path>
+                    <line x1="10.37" y1="19.9" x2="53.75" y2="19.9"></line>
+                    <line x1="32" y1="6.99" x2="32" y2="56.7"></line>
+                    <line x1="11.05" y1="45.48" x2="37.04" y2="45.48"></line>
+                    <line x1="7.14" y1="32.46" x2="56.86" y2="31.85"></line>
+                    <path
+                      d="M53.57,57,58,52.56l-8-8,4.55-2.91a.38.38,0,0,0-.12-.7L39.14,37.37a.39.39,0,0,0-.46.46L42,53.41a.39.39,0,0,0,.71.13L45.57,49Z"
+                    ></path>
+                  </g>
+                </svg>
+              </a>
+            </div>
+            <div class="img-container">
+              <img
+                class="project-img"
+                src="src/images/Flowmazon.png"
+                alt="user authentication"
+              />
+            </div>
+            <div class="project-info">
+              <h3>E-commerce</h3>
+              <p class="subtext">
+                This is a E-commerce project, built using the  Next.js 14, TypeScript, Next-Auth, MongoDB, Prisma, Google Login, TailwindCSS, DaisyUI.
+              </p>
+              <hr />
+              <p class="subtext">
+                <a
+                  class="link"
+                  href="https://github.com/Selvan-S/nextjs-ecommerce"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Github Repo</a
+                >
+                |
+                <a
+                  class="link"
+                  href="https://nextjs-ecommerce-lac-six.vercel.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Live Website</a
+                >
+              </p>
+            </div>
+          </div>
+          <!-- Project 5 -->
+          <div class="project-card project-one">
+            <div class="project-one-github">
+              <a
+                href="https://github.com/Selvan-S/todolistapp-frontend"
+                target="_blank"
+              >
+                <svg
+                  class="project-svg"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="aqua"
+                  width="50"
+                  height="50"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                  />
+                </svg>
+              </a>
+            </div>
+            <div class="project-one-live">
+              <a
+                href="https://2dolist-app.netlify.app"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg
+                  class="project-svg"
+                  viewBox="0 0 64 64"
+                  xmlns="http://www.w3.org/2000/svg"
+                  stroke-width="3"
+                  stroke="aqua"
+                  fill="none"
+                >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path
+                      d="M39.93,55.72A24.86,24.86,0,1,1,56.86,32.15a37.24,37.24,0,0,1-.73,6"
+                    ></path>
+                    <path d="M37.86,51.1A47,47,0,0,1,32,56.7"></path>
+                    <path
+                      d="M32,7A34.14,34.14,0,0,1,43.57,30a34.07,34.07,0,0,1,.09,4.85"
+                    ></path>
+                    <path
+                      d="M32,7A34.09,34.09,0,0,0,20.31,32.46c0,16.2,7.28,21,11.66,24.24"
+                    ></path>
+                    <line x1="10.37" y1="19.9" x2="53.75" y2="19.9"></line>
+                    <line x1="32" y1="6.99" x2="32" y2="56.7"></line>
+                    <line x1="11.05" y1="45.48" x2="37.04" y2="45.48"></line>
+                    <line x1="7.14" y1="32.46" x2="56.86" y2="31.85"></line>
+                    <path
+                      d="M53.57,57,58,52.56l-8-8,4.55-2.91a.38.38,0,0,0-.12-.7L39.14,37.37a.39.39,0,0,0-.46.46L42,53.41a.39.39,0,0,0,.71.13L45.57,49Z"
+                    ></path>
+                  </g>
+                </svg>
+              </a>
+            </div>
+            <div class="img-container">
+              <img
+                class="project-img"
+                src="src/images/todolistapp.png"
+                alt="user authentication"
+              />
+            </div>
+            <div class="project-info">
+              <h3>Todolistapp</h3>
+              <p class="subtext">
+                This is a Todolistapp project, built using the Typescript, mongoDB, Expressjs, Reactjs and nodejs.
+              </p>
+              <hr />
+              <p class="subtext">
+                <a
+                  class="link"
+                  href="https://github.com/Selvan-S/todolistapp-frontend"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Github Repo</a
+                >
+                |
+                <a
+                  class="link"
+                  href="https://2dolist-app.netlify.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Live Website</a
+                >
+              </p>
+            </div>
+          </div>
+          <!-- Project 4 -->
+          <div class="project-card project-one">
+            <div class="project-one-github">
+              <a
+                href="https://github.com/Selvan-S/bookstore-frontend"
+                target="_blank"
+              >
+                <svg
+                  class="project-svg"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="aqua"
+                  width="50"
+                  height="50"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                  />
+                </svg>
+              </a>
+            </div>
+            <div class="project-one-live">
+              <a
+                href="https://booksstore-app.netlify.app"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg
+                  class="project-svg"
+                  viewBox="0 0 64 64"
+                  xmlns="http://www.w3.org/2000/svg"
+                  stroke-width="3"
+                  stroke="aqua"
+                  fill="none"
+                >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path
+                      d="M39.93,55.72A24.86,24.86,0,1,1,56.86,32.15a37.24,37.24,0,0,1-.73,6"
+                    ></path>
+                    <path d="M37.86,51.1A47,47,0,0,1,32,56.7"></path>
+                    <path
+                      d="M32,7A34.14,34.14,0,0,1,43.57,30a34.07,34.07,0,0,1,.09,4.85"
+                    ></path>
+                    <path
+                      d="M32,7A34.09,34.09,0,0,0,20.31,32.46c0,16.2,7.28,21,11.66,24.24"
+                    ></path>
+                    <line x1="10.37" y1="19.9" x2="53.75" y2="19.9"></line>
+                    <line x1="32" y1="6.99" x2="32" y2="56.7"></line>
+                    <line x1="11.05" y1="45.48" x2="37.04" y2="45.48"></line>
+                    <line x1="7.14" y1="32.46" x2="56.86" y2="31.85"></line>
+                    <path
+                      d="M53.57,57,58,52.56l-8-8,4.55-2.91a.38.38,0,0,0-.12-.7L39.14,37.37a.39.39,0,0,0-.46.46L42,53.41a.39.39,0,0,0,.71.13L45.57,49Z"
+                    ></path>
+                  </g>
+                </svg>
+              </a>
+            </div>
+            <div class="img-container">
+              <img
+                class="project-img"
+                src="src/images/bookstore.png"
+                alt="user authentication"
+              />
+            </div>
+            <div class="project-info">
+              <h3>Bookstore</h3>
+              <p class="subtext">
+                This is a bookstore project, built using the mongoDB, Expressjs, Reactjs and nodejs.
+              </p>
+              <hr />
+              <p class="subtext">
+                <a
+                  class="link"
+                  href="https://github.com/Selvan-S/bookstore-frontend"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Github Repo</a
+                >
+                |
+                <a
+                  class="link"
+                  href="https://booksstore-app.netlify.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Live Website</a
+                >
+              </p>
+            </div>
+          </div>
+          <!-- Project 3 -->
+          <div class="project-card project-one">
+            <div class="project-one-github">
+              <a
+                href="https://github.com/Selvan-S/user-authentication-frontend"
+                target="_blank"
+              >
+                <svg
+                  class="project-svg"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="aqua"
+                  width="50"
+                  height="50"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                  />
+                </svg>
+              </a>
+            </div>
+            <div class="project-one-live">
+              <a
+                href="https://user-authentication-guvi.netlify.app"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg
+                  class="project-svg"
+                  viewBox="0 0 64 64"
+                  xmlns="http://www.w3.org/2000/svg"
+                  stroke-width="3"
+                  stroke="aqua"
+                  fill="none"
+                >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path
+                      d="M39.93,55.72A24.86,24.86,0,1,1,56.86,32.15a37.24,37.24,0,0,1-.73,6"
+                    ></path>
+                    <path d="M37.86,51.1A47,47,0,0,1,32,56.7"></path>
+                    <path
+                      d="M32,7A34.14,34.14,0,0,1,43.57,30a34.07,34.07,0,0,1,.09,4.85"
+                    ></path>
+                    <path
+                      d="M32,7A34.09,34.09,0,0,0,20.31,32.46c0,16.2,7.28,21,11.66,24.24"
+                    ></path>
+                    <line x1="10.37" y1="19.9" x2="53.75" y2="19.9"></line>
+                    <line x1="32" y1="6.99" x2="32" y2="56.7"></line>
+                    <line x1="11.05" y1="45.48" x2="37.04" y2="45.48"></line>
+                    <line x1="7.14" y1="32.46" x2="56.86" y2="31.85"></line>
+                    <path
+                      d="M53.57,57,58,52.56l-8-8,4.55-2.91a.38.38,0,0,0-.12-.7L39.14,37.37a.39.39,0,0,0-.46.46L42,53.41a.39.39,0,0,0,.71.13L45.57,49Z"
+                    ></path>
+                  </g>
+                </svg>
+              </a>
+            </div>
+            <div class="img-container">
+              <img
+                class="project-img"
+                src="src/images/user registration.png"
+                alt="user authentication"
+              />
+            </div>
+            <div class="project-info">
+              <h3>User Authentication</h3>
+              <p class="subtext">
+                This is my User Authentication project developed during the Guvi course, utilizing the MERN stack.
+              </p>
+              <hr />
+              <p class="subtext">
+                <a
+                  class="link"
+                  href="https://github.com/Selvan-S/user-authentication-frontend"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Github Repo</a
+                >
+                |
+                <a
+                  class="link"
+                  href="https://user-authentication-guvi.netlify.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Live Website</a
+                >
+              </p>
+            </div>
+          </div>
+          <!-- Project 2 -->
+          <div class="project-card project-one">
+            <div class="project-one-github">
+              <a
+                href="https://github.com/Selvan-S/fem-social-media-dashboard"
+                target="_blank"
+              >
+                <svg
+                  class="project-svg"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="aqua"
+                  width="50"
+                  height="50"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                  />
+                </svg>
+              </a>
+            </div>
+            <div class="project-one-live">
+              <a
+                href="https://selvan-s.github.io/fem-social-media-dashboard/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg
+                  class="project-svg"
+                  viewBox="0 0 64 64"
+                  xmlns="http://www.w3.org/2000/svg"
+                  stroke-width="3"
+                  stroke="aqua"
+                  fill="none"
+                >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path
+                      d="M39.93,55.72A24.86,24.86,0,1,1,56.86,32.15a37.24,37.24,0,0,1-.73,6"
+                    ></path>
+                    <path d="M37.86,51.1A47,47,0,0,1,32,56.7"></path>
+                    <path
+                      d="M32,7A34.14,34.14,0,0,1,43.57,30a34.07,34.07,0,0,1,.09,4.85"
+                    ></path>
+                    <path
+                      d="M32,7A34.09,34.09,0,0,0,20.31,32.46c0,16.2,7.28,21,11.66,24.24"
+                    ></path>
+                    <line x1="10.37" y1="19.9" x2="53.75" y2="19.9"></line>
+                    <line x1="32" y1="6.99" x2="32" y2="56.7"></line>
+                    <line x1="11.05" y1="45.48" x2="37.04" y2="45.48"></line>
+                    <line x1="7.14" y1="32.46" x2="56.86" y2="31.85"></line>
+                    <path
+                      d="M53.57,57,58,52.56l-8-8,4.55-2.91a.38.38,0,0,0-.12-.7L39.14,37.37a.39.39,0,0,0-.46.46L42,53.41a.39.39,0,0,0,.71.13L45.57,49Z"
+                    ></path>
+                  </g>
+                </svg>
+              </a>
+            </div>
+            <div class="img-container">
+              <img
+                class="project-img"
+                src="src/images/social-media-dashboard.jpg"
+                alt=""
+              />
+            </div>
+            <div class="project-info">
+              <h3>Social Media Dashboard</h3>
+              <p class="subtext">
+                This is my Social Media Dashboard project from Front-end Mentor
+                Challange.
+              </p>
+              <hr />
+              <p class="subtext">
+                <a
+                  class="link"
+                  href="https://github.com/Selvan-S/fem-social-media-dashboard"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Github Repo</a
+                >
+                |
+                <a
+                  class="link"
+                  href="https://selvan-s.github.io/fem-social-media-dashboard/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Live Website</a
+                >
+              </p>
+            </div>
+          </div>
+          <!-- Project 1 -->
+          <div class="project-card project-two">
+            <div class="project-two-github">
+              <a
+                href="https://github.com/Selvan-S/python-sqlite3-crud"
+                target="_blank"
+              >
+                <svg
+                  class="project-svg"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="aqua"
+                  width="50"
+                  height="50"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                  />
+                </svg>
+              </a>
+            </div>
+            <div class="img-container">
+              <img
+                class="project-img"
+                src="src/images/Python with SQLite.png"
+                alt=""
+              />
+            </div>
+            <div class="project-info">
+              <h3>Customer Management</h3>
+              <p class="subtext">
+                This is a simple customer management using SQLite and Python. I
+                enjoyed making this project
+              </p>
+              <hr />
+              <p class="subtext">
+                <a
+                  class="link"
+                  href="https://github.com/Selvan-S/python-sqlite3-crud"
+                  target="_blank"
+                  >Github Repo</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ------------Contact Me ----------- -->
+    <footer id="contact-me">
+      <h2>Contact Me</h2>
+      <form
+        class="contact-form"
+        id="myform"
+        action="https://formsubmit.co/myportfolio.557jv@aleeas.com"
+        method="post"
+      >
+        <input
+          type="hidden"
+          name="_subject"
+          value="New email from portfolio!"
+        />
+        <input
+          class="form-control"
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Name"
+          required
+        />
+        <input
+          class="form-control"
+          type="email"
+          name="email"
+          placeholder="Email Address"
+        />
+        <input
+          type="hidden"
+          name="_next"
+          value="https://selvans.netlify.app/src/pages/thankyou.html"
+        />
+        <input type="hidden" name="_captcha" value="false" />
+        <textarea
+          placeholder="Your Message"
+          class="form-control"
+          name="message"
+          rows="5"
+          required
+        ></textarea>
+        <button class="form-control" type="submit">Submit</button>
+      </form>
+      <div class="footer-social-links">
+        <a href="https://twitter.com/codyselvan" target="_blank" class="x">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            x="0px"
+            y="0px"
+            width="50"
+            height="50"
+            viewBox="0,0,256,256"
+          >
+            <g
+              fill="aqua"
+              fill-rule="nonzero"
+              stroke="none"
+              stroke-width="1"
+              stroke-linecap="butt"
+              stroke-linejoin="miter"
+              stroke-miterlimit="10"
+              stroke-dasharray=""
+              stroke-dashoffset="0"
+              font-family="none"
+              font-weight="none"
+              font-size="none"
+              text-anchor="none"
+              style="mix-blend-mode: normal"
+            >
+              <g transform="scale(5.12,5.12)">
+                <path
+                  d="M6.91992,6l14.2168,20.72656l-14.9082,17.27344h3.17773l13.13867,-15.22266l10.44141,15.22266h10.01367l-14.87695,-21.6875l14.08008,-16.3125h-3.17578l-12.31055,14.26172l-9.7832,-14.26172z"
+                ></path>
+              </g>
+            </g>
+          </svg>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/selvan23/"
+          target="_blank"
+          class="linkedin"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="aqua"
+            width="50"
+            height="50"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"
+            />
+          </svg>
+        </a>
+        <a href="https://github.com/Selvan-S" target="_blank" class="github">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="aqua"
+            width="50"
+            height="50"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+            />
+          </svg>
+        </a>
+      </div>
+    </footer>
+    <script src="src/app.js"></script>
+  </body>
+</html>
