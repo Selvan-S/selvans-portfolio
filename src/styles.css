@@ -266,7 +266,7 @@ section {
   transform: scale(0);
 }
 .subtext a:hover::after {
-  transform: scale(1);
+  transform: scale(0);
 }
 
 hr {
@@ -303,7 +303,7 @@ hr {
   height: auto;
   border-radius: 50%;
 }
-.project-card:hover::before {
+.project-card:hover::before, .project-card:focus::before {
   content: "";
   position: absolute;
   top: 0;
@@ -551,19 +551,6 @@ footer .x {
   .aboutme-section {
     flex-direction: column-reverse;
     width: 56%;
-  }
-
-  /* Project */
-  .project-card:hover::before {
-    background-image: none;
-    filter: none;
-    -webkit-filter: none;
-    z-index: -1;
-  }
-
-  .project-card:hover .project-svg,
-  .project-card:focus .project-svg {
-    display: none;
   }
 
   /* Footer */
